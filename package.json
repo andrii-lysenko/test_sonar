@@ -5,7 +5,8 @@
     "version": "1.0.0",
     "main": "pathToMain",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "test:coverage": "jest coverage"
     },
     "dependencies": {
         "typescript": "4.2.4",

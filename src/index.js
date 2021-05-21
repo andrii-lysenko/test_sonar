@@ -31,6 +31,12 @@ const infiniteLoop = (value) => {
     infiniteLoop(value);
 }
 
+const hello = () => {
+    console.log('hello');
+    return true;
+}
+
 module.exports = {
+    hello,
     badCondition
 }
