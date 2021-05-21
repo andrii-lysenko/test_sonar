@@ -62,8 +62,14 @@ const hello = () => {
     return true;
 }
 
+const hello2 = () => {
+    console.log('hello');
+    return true;
+}
+
 module.exports = {
     hello,
+    hello2,
     badCondition,
     overrideParam,
     duplicateFunction,
