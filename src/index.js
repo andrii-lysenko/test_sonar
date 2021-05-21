@@ -53,12 +53,8 @@ const infiniteLoop = (value) => {
     infiniteLoop(value);
 }
 
-const messWindow = (val) => {
-    window.top.location.href = val.href;
-}
-
-const messWindow = (val) => {
-    window.top.location.href = val.href;
+const messWindow = () => {
+    window.top.location.href = location.href;
 }
 
 const hello = () => {
