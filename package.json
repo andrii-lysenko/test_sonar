@@ -6,15 +6,16 @@
     "main": "pathToMain",
     "jest": {
         "testEnvironment": "node",
-        "testResultsProcessor": "jest-sonar-reporter"
-    },
-    "jestSonar": {
-        "reportPath": "coverage",
-        "reportFile": "test-coverage.xml"
+        "testResultsProcessor": "jest-sonar-reporter",
+        "collectCoverage": true,
+        "coveragePathIgnorePatterns": [
+        "/node_modules/",
+        "/test/"
+        ]
     },
     "scripts": {
         "test": "jest",
-        "test:coverage": "jest coverage"
+        "test:coverage": "jest --coverage"
     },
     "dependencies": {
         "typescript": "4.2.4"
