@@ -4,12 +4,23 @@
     "authors": "author",
     "version": "1.0.0",
     "main": "pathToMain",
+    "jest": {
+        "testEnvironment": "node",
+        "testResultsProcessor": "jest-sonar-reporter"
+    },
+    "jestSonar": {
+        "reportPath": "coverage",
+        "reportFile": "test-coverage.xml"
+    },
     "scripts": {
         "test": "jest",
         "test:coverage": "jest coverage"
     },
     "dependencies": {
-        "typescript": "4.2.4",
+        "typescript": "4.2.4"
+    },
+    "devDependencies": {
+        "jest-sonar-reporter": "2.0.0",
         "jest": "26.6.3"
     }
 }
